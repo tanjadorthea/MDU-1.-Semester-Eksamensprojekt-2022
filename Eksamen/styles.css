@@ -1,0 +1,950 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* BURGERMENU  */
+
+#burgermenubody{
+    background-color:#ACCD87;
+    color: black;
+  }
+  
+  #burgermenu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 10%;
+  }
+
+  #burgermenuexit > img{
+    width: 30px;
+    height: 30px;
+    padding: 6%;
+  }
+
+  #burgermenu > .dropdown > .dropbtn{
+      background-color: #ACCD87;
+  }
+
+  #burgermenu > .dropbtn > .dropdown-content a:hover {
+    background-color:#7C9849;
+  }
+
+  #burgermenu > .dropdown > .dropbtn > #pil{
+      max-width:8px;
+  }
+
+  #burgermenu > a{
+    background-color: #ACCD87;
+  }
+
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:50px;
+  
+    padding-top: 20px;
+    padding-bottom:15px;
+  
+    display:flex;
+    justify-content: space-around;
+  
+    position:sticky;
+    z-index: 2;
+    top:-1px;
+    background-color:white;
+
+    box-shadow: 0px 0.5px 30px black;
+  }
+
+  
+  /* spacing af navbaren */
+  nav{
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* styling af "kontakt" i headeren, som ikke skal have drop down */
+  nav > a{
+    background-color:white;
+    color: black;
+    border: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    letter-spacing: 1pt;
+  }
+  
+  
+  /* Ikoner i headeren */
+  #navikoner {
+    display: flex;
+    gap: 30px;
+  }
+  
+  #searchnavikon{
+    width: 40px;
+    height: 40px;
+  }
+
+  #mobilemenubutton > img{
+      max-width:25px;
+  }
+
+  #Lillelogo{
+    display:flex;
+    height: 50px;
+    width:50px;
+}
+  
+  
+  /* dropdown styling i navbaren */
+  .dropbtn {
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 10px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    letter-spacing: 1pt;
+    cursor:pointer;
+  }
+  
+
+  /* display none, da content i dropdown skal være gemt væk når man ikke hover over det */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    letter-spacing: 1pt;
+  }
+  
+  /* skift af baggrundfarve når man hover */
+  .dropdown-content a:hover {
+      background-color: #ACCD87;
+    }
+  
+  /* display bliver ændret til blok, for at vise content når man hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  #desktopmenu > .dropdown > .dropbtn > .pil{
+    max-width:8px;
+}
+
+
+
+/* FORSIDE */
+
+  /* Container holding the image and the text */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+    /* Centered text */
+.centered{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90pt;
+    font-family:'Noto Serif Display', serif;
+    color: #7C9849;
+  }
+
+  .centered2{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30pt;
+    font-family:'Noto Serif Display', serif;
+    color: white;
+  }
+
+  #metteforsidebillede{
+      width:100%;
+  }
+
+  #indledning{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+      line-height: 1.6;
+
+      padding-top:40px;
+      padding-bottom:40px;
+      background-color:white;
+    }
+
+    #indledning > h2{
+        padding-bottom:30px;
+    }
+
+    #findglædenigen{
+        position: relative;
+        text-align: center;
+    }
+
+    #sandwich{
+        max-width: 100%;
+    }
+
+   #glædetekst{
+        position: absolute;
+        top: 28%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        font-size: 20pt;
+        font-family:'Noto Serif Display', serif;
+        font-weight: 600;
+        color: #7C9849;
+      }
+
+      #glædeundertekst{
+        position: absolute;
+        top: 38%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+
+        font-size: 10pt;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: black;
+
+      }
+
+
+/* OPSKRIFTER */ 
+
+#opskrifter{
+    background-color:#E0D7CE;
+    padding-top:30px;
+    text-align: center;
+}
+
+#opskrifter > h3{
+    padding-top:30px;
+    padding-bottom:50px;
+}
+
+#opskrifter > .opskriftbilleder{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-bottom:30px;
+}
+
+
+/* HVEM ER JEG?*/
+#hvemerjeg{
+    background-color: #E0D7CE;
+}
+
+#hvemerjeg > aside{
+    display:flex;
+    flex-direction: column;
+    float:right;
+}
+
+#hvemerjeg > aside > nav > img{
+    width: 100%;
+}
+
+#mettetekst{
+    width:35%;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+
+    margin-left:70px;
+    padding-bottom:42px;
+}
+
+#mettetekst > h2{
+    text-align: center;
+    padding-bottom:30px;
+    padding-top:30px;
+}
+
+#mettetekst, #mettetekst2 > p{
+    line-height: 1.6;
+}
+
+#mettetekst2{
+    display:flex;
+    flex-direction: row;
+
+    text-align: left;
+    background-color: white;
+
+    padding:50px 70px;
+    gap:35px;
+}
+
+
+/* AFTENMÅLTIDER*/
+
+#raguopskrift{
+    background-color: #E0D7CE;
+    display:flex;
+    flex-direction: column;
+}
+
+#række{
+    display:flex;
+    flex-direction:row;
+    gap:230px;
+}
+
+#raguingredienser{
+    display:flex;
+    flex-direction: column;
+    padding-left:70px;
+}
+
+#raguopskrift > #række > #raguingredienser > h2{
+    display:flex;
+    text-align: left;
+    padding:30px 0px;
+}
+
+ul{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 10pt;
+    padding-top:10px;
+}
+
+#raguopskrift > #række > #ragu > img{
+    width: 100%;
+    max-height:480px;
+  }
+
+#ragufremgangsmåde{
+    background-color:#E0D7CE;
+    padding-left:70px;
+    padding-top:50px;
+}
+
+
+/* HVAD ER FODMAP? */
+
+#fodmaphero{
+    position: relative;
+    text-align: center;
+}
+
+#fodmaphero > #mave{
+    width:100%;
+}
+
+#billedtekstlowfodmap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50pt;
+    font-family:'Noto Serif Display', serif;
+    color: black;
+}
+  
+#fodmapindledning{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  
+    text-align: center;
+    line-height: 1.6;
+  
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color:#E0D7CE;
+}
+
+#fodmapindledning > div > p{
+    padding-bottom:20px;
+}
+
+#fodmapindledning > div > h3{
+    text-align: left;
+    padding-bottom:50px;
+}
+
+
+/* Fold ud section */
+
+#foldudafsnit{
+    width:100%;
+    margin-top:30px;
+}
+
+#foldudafsnit > input {
+    display: none;
+}
+
+#foldudafsnit > label {
+    width:40%;
+    display: block; 
+    padding: 8px 22px;
+
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    cursor: pointer;
+    background:#7C9849;
+    border-radius: 25px;
+
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+#foldudafsnit > label:hover {
+    background:#ACCD87;
+}
+
+
+#foldudafsnit > label > .pil{
+    max-width:8px;
+    padding-left:5px;
+}
+
+#foldudafsnit >.content {
+    width:60%;
+    border-radius: 25px;
+    margin-bottom:30px;
+    padding: 10px 25px;
+    background: #ffffff;
+    text-align: left; 
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#foldudafsnit >.content > p{
+    padding-top: 15px;
+}
+
+#foldudafsnit >.content > h3{
+    padding-top: 20px;
+}
+
+#foldudafsnit > input + label + .content {
+    display: none;
+}
+
+#foldudafsnit > input:checked + label + .content {
+    display: block;
+}
+
+
+/* Bøger section */
+#bøger{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+#bøger > p{
+    padding-top:20px;
+    padding-bottom:30px;
+}
+
+#bøger > #trebøger{
+    display:flex;
+    flex-direction: row;
+    gap:70px;
+}
+
+#bøger > #trebøger > .hverbog > img{
+    width:280px;
+}
+
+#bøger > #trebøger > .hverbog > p{
+    width:280px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#bøger > #trebøger > .hverbog > .af{
+    width:280px;
+    text-align: left;
+    padding-top:20px;
+    line-height: 1.6;
+    font-size:8pt;
+}
+
+.købher{
+  background-color:#7C9849;
+  border: none;
+
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+
+  padding: 15px 32px;
+  margin-top:40px;
+}
+
+
+/* KONTAKT */
+#kontaktsection{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:30px;
+}
+
+#kontaktsection > h3{
+    padding-top:30px;
+}
+
+/* kontaktformular */
+input[type=text], textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  
+  input[type=submit] {
+    background-color:#ACCD87;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:#7C9849;
+  }
+  
+  .kontaktformular {
+    width:70%;
+    background-color: #E0D7CE;
+    border-radius: 5px;
+    padding: 20px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:50px;
+  }
+
+
+/* FOOTER */
+
+footer{
+    padding-top:40px;
+    width:100%;
+  
+    background-color:#E0D7CE;
+    text-align:left;
+  
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer > div > #storelogo{
+      width: 190px;
+  }
+  
+  footer > div > p{
+    margin-top:20px;
+    margin-bottom:20px;
+    color:black;
+    text-align: left;
+  }
+  
+  footer > div > p > a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #nederst{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-bottom:20px;
+      padding-top:20px;
+      background-color: #E0D7CE;
+  }
+
+
+/* ANIMATIONER */
+@keyframes fadeIn{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+    /* Forside */
+    .hero{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    #indledning{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    #findglædenigen{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    /* Opskrifter */
+    #opskrifter{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    /* Hvem er jeg */
+    #hvemerjeg{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    /* Hvad er Fodmap */
+    #fodmaphero{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    #fodmapindledning{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    #bøger{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    /* Aftenmåltid */
+    #raguopskrift{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    #ragufremgangsmåde{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    /* Kontakt */
+    #kontaktsection{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+    .kontaktformular{
+        animation: fadeIn;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+  
+
+
+/* MEDIA QUERIES */
+
+    /* LAPTOP */
+    @media only screen and (min-width:1000px){
+        /* Header */
+       #mobilemenubutton{
+           display: none;
+          }
+        }
+
+
+    /* SMARTPHONE */
+    @media only screen and (max-width:500px){
+
+        /* Header */
+        #desktopmenu{
+            display:none;
+        }
+
+    /* FORSIDE */
+        /* Tekst på hero billede */
+
+        .hero > .centered{
+            font-size: 26pt;
+        }
+
+        .hero > .centered2{
+            font-size: 10pt;
+        }
+
+        /* Tekst på sandwich billede */
+        #findglædenigen > #glædetekst{
+            font-size: 7pt;
+        }
+
+        #findglædenigen > #glædeundertekst{
+            font-size: 5pt;
+            padding-top:20px;
+        }
+
+        /* Indledning */
+        #indledning > h2{
+            font-size: 20px;
+        }
+        
+        #indledning > h3{
+            font-size: 9px;
+        }
+
+
+    /* OPSKRIFTER */
+        #opskrifter > .opskriftbilleder{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .opskriftbilleder > a > img{
+            max-width:350px;
+        }
+
+        #opskrifter > h2{
+            font-size: 20pt;
+        }
+
+        #opskrifter > h3{
+            font-size: 9pt;
+        }
+
+
+    /* AFTENMÅLTIDER */
+        #raguopskrift > #raguingredienser > h2{
+            font-size: 20pt;
+        }
+
+        #raguopskrift > #raguingredienser > h3{
+            font-size: 9pt;
+        }
+
+        #raguopskrift > #raguingredienser > ul{
+            font-size: 7pt;
+        }
+        
+        #raguopskrift > aside > h3{
+            font-size: 9pt;
+        }
+
+        #raguopskrift > aside > p{
+            font-size: 7pt;
+            margin-right:70px;
+        }
+
+    /* HVEM ER JEG?*/
+
+        #hvemerjeg > #mettetekst{
+            width:60%;
+        }
+
+        #hvemerjeg > #mettetekst > h2{
+            font-size:20pt;
+        }
+
+        #hvemerjeg > #mettetekst > p{
+            font-size:7pt;
+        }
+
+        #hvemerjeg > #mettetekst2{
+            display:flex;
+            flex-direction: column;
+        }
+
+        #hvemerjeg > #mettetekst2 > #kolonne1 > p{
+            font-size:7pt;
+        }
+
+        #hvemerjeg > #mettetekst2 > #kolonne2 > p{
+            font-size:7pt;
+        }
+
+
+    /* HVAD ER LOW FODMAP? */
+        #billedtekstlowfodmap{
+            font-size: 25pt;
+        }
+
+        #fodmapindledning > h3{
+            font-size: 9pt;
+        }
+
+        #fodmapindledning > #foldudafsnit > label{
+            width:200px;
+            font-size:7pt;
+        }
+
+        #bøger > h2{
+            font-size: 20pt;
+        }
+
+        #bøger > p{
+            font-size: 7pt;
+        }
+
+        #bøger > #trebøger{
+            display:flex;
+            flex-direction: column;
+        }
+
+        #bøger > #trebøger > .hverbog > p, #af{
+            font-size: 7pt;
+        }
+
+
+    /* KONTAKT */
+        #kontaktsection > h2{
+            font-size: 20pt;
+        }
+
+        #kontaktsection > h3{
+            font-size: 9pt;
+        }
+
+        label{
+            font-size:9pt;
+        }
+
+
+    /* FOOTER */
+        footer{
+            display:flex;
+            flex-direction: column;
+        }
+
+        #storelogo{
+            max-width:100px;
+            display:flex;
+            margin-right:auto;
+            margin-left:auto;
+        }
+
+        footer > .down{
+            display:flex;
+            flex-direction: column;
+            margin-left:70px;
+            margin-right:70px;
+        }
+    }
+
+
+  /* FONTS */
+
+  h2{
+      font-size: 40pt;
+      font-family: 'Noto Serif Display', serif;
+      color:#7C9849;
+  }
+
+  h3{
+      font-size: 13pt;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  h4{
+      font-size: 12;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  h6{
+      font-size: 10px;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  p{
+      font-size: 10pt;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      line-height: 1.6;
+  }
+
+  a{
+      text-decoration: none;
+      color:white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 10pt;
+      font-weight: 600;
+  }
+
+  /* Referencer */
+  .kilder{
+      background-color: #E0D7CE;
+      text-align:right;
+  }
+
+  .kilder > p{
+      font-size: 6px;
+  }
+
+  .kilder2{
+      background-color: white;
+      text-align:right;
+    
+  }
+
+  .kilder2 > p{
+    font-size: 6px;
+}
